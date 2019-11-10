@@ -1,18 +1,14 @@
 import React from 'react'
 import './card.css'
 
-const Card = ({ images }) => {
+const Gallery = ({ character }) => {
   return (
-    <div className="wrapper">
-      {
-        images.results && images.results.map((image) => (
-          <div className="img-card" key={image.id}>
-            <img src={image.image} alt="" />
-          </div>
-        ))
-      }
+    <div className="card--container">
+      <div className="card--container__image">
+        <img src={character.image} alt={character.name} />
+      </div>
     </div>
   )
 }
 
-export default Card;
+export default Gallery;
