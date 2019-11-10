@@ -9,10 +9,10 @@ const Gallery = ({ character }) => {
           <img src={character.image} alt={character.name} />
         </div>
         <div className="card--container__content">
-          <p>{character.name}</p>
-          <p>{character.species}</p>
-          <p>{character.gender}</p>
-          <p>{character.status}</p>
+          <h2>{character.name}</h2>
+          <p>Specie: {character.species}</p>
+          <p>Gender: {character.gender}</p>
+          <p>Status: {character.status}</p>
         </div>
       </div>
     </div>

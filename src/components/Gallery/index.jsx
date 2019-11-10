@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Card from '../Card'
+import Card from '../Card';
+import Button from '../Button';
 
 import './gallery.scss'
 
@@ -20,13 +21,19 @@ const Gallery = () => {
 
   return (
     <div className="gallery--container">
-      {
-        characters.results && characters.results.map(character =>
-          <Card
-            key={character.id}
-            character={character}
-          />
-        )}
+      <div className="gallery--container__card--section">
+        {
+          characters.results && characters.results.map(character =>
+            <Card
+              key={character.id}
+              character={character}
+            />
+          )}
+      </div>
+      <div className="gallery--container__button--section">
+        <Button />
+        <Button />
+      </div>
     </div>
   )
 }

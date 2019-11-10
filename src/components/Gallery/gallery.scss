@@ -1,6 +1,20 @@
 .gallery--container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+
+  &__card--section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+
+
+  &__button--section {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
 }
