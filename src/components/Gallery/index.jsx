@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../Card'
 
-const API_URL = 'https://rickandmortyapi.com/api/character/?page=3';
+import './gallery.scss'
+
+const API_URL = 'https://rickandmortyapi.com/api/character/';
 
 const Gallery = () => {
   const [characters, setCharacters] = useState({});
