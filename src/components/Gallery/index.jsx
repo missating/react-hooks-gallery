@@ -34,7 +34,6 @@ const Gallery = () => {
     fetch(`${API_URL}?page=${page}`)
       .then(response => response.json())
       .then(response => {
-        console.log(response)
         setCharacters(response)
         const pages = response.info.pages
         setPages(pages - 1);
@@ -48,7 +47,7 @@ const Gallery = () => {
     <div className="gallery--container">
       <div className="gallery--container__button--section">
         <Button name='previous' disabled={disabled || page === 1} onClick={previous} />
-        <span>page {page ? page : "1"}</span>
+        <span className="gallery--container__text">page {page ? page : "1"}</span>
         <Button name='next' disabled={disabled || page === pages} onClick={next} />
       </div>
       <div className="gallery--container__card--section">
