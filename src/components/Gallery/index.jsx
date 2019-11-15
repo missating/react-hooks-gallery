@@ -46,9 +46,9 @@ const Gallery = () => {
   return (
     <div className="gallery--container">
       <div className="gallery--container__button--section">
-        <Button name='previous' disabled={disabled || page === 1} onClick={previous} />
+        <Button name='Previous' disabled={disabled || page === 1} onClick={previous} />
         <span className="gallery--container__text">page {page ? page : "1"}</span>
-        <Button name='next' disabled={disabled || page === pages} onClick={next} />
+        <Button name='Next' disabled={disabled || page === pages} onClick={next} />
       </div>
       <div className="gallery--container__card--section">
         {

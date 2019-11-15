@@ -2,7 +2,9 @@
     display: inline-block;
     border: 1px solid #000000;
     border-radius: 5px;
-    padding: 1rem 2rem;
+    height: auto;
+    width: 80px;
+    // padding: 1rem 2rem;
     margin: 0;
     text-decoration: none;
     background: #000000;
@@ -23,7 +25,7 @@ button:focus {
 }
 
 button:disabled {
-  cursor: not-allowed;
+    cursor: not-allowed;
 }
 
 button:focus {
